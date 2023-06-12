@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Access Manager</title>
+  </head>
+  <body>
+    <div class="content">
+      <form>
+        <div class="username">
+          <label for="username">Username: </label>
+          <input type="text" name="username" id="username" placeholder="" />
+        </div>
+
+        <div class="password">
+          <label for="password">Password: </label>
+          <input type="password" name="password" id="password" />
+        </div>
+
+        <div class="city">
+          <label for="city">City of Employment: </label>
+          <input type="text" name="city" id="city" />
+        </div>
+
+        <div class="web-server">
+          <label for="web-server">Web server: </label>
+          <select>
+            <option value="0" hidden>-Choose a server-</option>
+            <option value="1">Apeche2</option>
+            <option value="2">Nginx</option>
+            <option value="3">IIS</option>
+          </select>
+        </div>
+
+        <div class="role">
+          <label for="role">Please specify your role: </label>
+          <label><input type="radio" name="role" />Admin</label>
+          <label><input type="radio" name="role" />Engineer</label>
+          <label><input type="radio" name="role" />Manager</label>
+          <label><input type="radio" name="role" />Guest </label>
+        </div>
+
+        <div class="sign-on">
+          <label for="sign-on">Single Sign-on co the following: </label>
+          <label><input type="checkbox" name="sign-on" />Mail</label>
+          <label><input type="checkbox" name="sign-on" />Payroll</label>
+          <label><input type="checkbox" name="sign-on" />Self-service</label>
+        </div>
+      </form>
+
+      <div class="send">
+        <form action="#">
+          <button type="submit">Login</button>
+        </form>
+        <form action="bai3.html">
+          <button type="submit">Reset</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

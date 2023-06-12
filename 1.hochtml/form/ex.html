@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content">
+      <form action="">
+        <div>
+          <label for="fullname">Ho va ten: </label>
+          <input
+            type="text"
+            name="fullname"
+            placeholder="Nhap ho va ten"
+            id="fullname"
+          />
+        </div>
+
+        <div>
+          <label for="email">Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Nhap dia chi email"
+          />
+        </div>
+
+        <div>
+          <label for="age">Age: </label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Nhap tuoi"
+            step="1"
+            min="17"
+          />
+        </div>
+
+        <div>
+          <label for="birthday">Date of birth: </label>
+          <input type="date" name="birthday" id="birthday" />
+        </div>
+
+        <div>
+          <label>Gender: </label>
+          <label> <input type="radio" name="gender" />Khong xac dinh</label>
+          <label> <input type="radio" name="gender" />Nam</label>
+          <label> <input type="radio" name="gender" />Nu</label>
+        </div>
+
+        <div>
+          <label for=""></label>
+        </div>
+
+        <div>
+          <label for="provinces">Country</label>
+          <select>
+            <option value="0" hidden>Select the city</option>
+            <optgroup label="Nourth Side">
+              <option value="1">Ha Noi</option>
+              <option value="2">Hai Phong</option>
+            </optgroup>
+            <optgroup label="Sourth Side">
+              <option value="3">Ho Chi Minh</option>
+              <option value="4">Binh Duong</option>
+            </optgroup>
+          </select>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+/* h3{
+    color: aqua;
+}
+
+h2{
+    color: blue;
+}
+
+.element h1{
+    color: aqua
+}
+
+.content h1{
+    color: blueviolet;
+}
+
+li{
+    color: aquamarine;
+} */
+
+
+h1.about-us {
+    color: red;
+}
+
+h2{
+    color: blue;
+}

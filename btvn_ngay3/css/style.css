@@ -1,0 +1,20 @@
+/* ul begin */
+ul {
+    list-style: none;
+}
+/* ul end */
+
+/* h2 begin */
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+/* h2 end */
+
+/* hr begin */
+hr {
+    width: 7%;
+    size: 5px;
+    color: red;
+} 
+
+
