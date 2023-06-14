@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Access Manager</title>
+    <link rel="stylesheet" href="./css/main_bai3.css" />
+  </head>
+  <body>
+    <div class="content">
+      <table cellpadding="5" cellspacing="0">
+        <tr>
+          <td width="25%">Username:</td>
+          <td>
+            <div class="form input-name">
+              <form action="">
+                <!-- <label for="username"></label> -->
+                <input type="text" name="username" id="username" />
+              </form>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Password:</td>
+          <td>
+            <div class="form input-password">
+              <form action="">
+                <!-- <label for="password"></label> -->
+                <input type="password" name="password" id="password" />
+              </form>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>City of Employment:</td>
+          <td>
+            <div class="form input-city">
+              <form action="">
+                <!-- <label for="city"></label> -->
+                <input type="text" name="city" id="city" />
+              </form>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Web server:</td>
+          <td>
+            <div class="form select-server">
+              <form action="">
+                <select>
+                  <option value="0" hidden>--Choose a server--</option>
+                  <option value="1">Apeche2</option>
+                  <option value="2">Nginx</option>
+                  <option value="3">IIS</option>
+                </select>
+              </form>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Please specify your role:</td>
+          <td>
+            <div class="form input-role">
+              <form action="">
+                <label for="role"></label>
+                <label><input type="radio" name="role" />Admin</label>
+                <label><input type="radio" name="role" />Engineer</label>
+                <label><input type="radio" name="role" />Manager</label>
+                <label><input type="radio" name="role" />Guest </label>
+              </form>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Single Sign-on <br />
+            to the following:
+          </td>
+          <td>
+            <div class="form input-checkbox">
+              <form action="">
+                <label for="role"></label>
+                <label><input type="checkbox" name="role" />Mail</label>
+                <label><input type="checkbox" name="role" />Payroll</label>
+                <label><input type="checkbox" name="role" />Self-service</label>
+              </form>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <th colspan="2">
+            <form action="#">
+              <button type="submit">Login</button>
+              <button type="submit">Reset</button>
+            </form>
+          </th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

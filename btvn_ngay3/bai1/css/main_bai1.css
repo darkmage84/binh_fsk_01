@@ -1,0 +1,60 @@
+/* footer begin */
+footer {
+    width: 70%;
+    margin: auto;
+    padding: 100px 0;
+}
+
+
+/*  */
+.content {
+    display: flex;
+    margin: 16px 0;
+}
+
+.info-contact {
+    width: 40%;
+    display: flex;
+}
+
+.info-contact p, span {
+    color: gray;
+}
+
+.info-contact i {
+    color: grey;
+}
+
+.info-location, .info-email, .info-phone {
+    display: flex;
+    margin: 16px 0;
+}
+
+.form-contact {
+    display: flex;
+    margin: auto;
+}
+
+.form-contact input{
+    width: 500px;
+    height: 25px;
+    border-width: thin;
+    border-color: rgb(152, 148, 148);
+    margin: 5px;
+    outline: none;
+}
+
+.form-contact textarea {
+    width: 500px;
+    height: 100px;
+    color: grey;
+    margin: 5px;
+}
+
+.form-contact button {
+    border-style: none;
+    background-color: rgb(15, 201, 173);
+    padding: 8px 16px;
+    margin: 5px;
+    color: white;
+}

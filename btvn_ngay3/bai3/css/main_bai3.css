@@ -1,0 +1,48 @@
+* {
+
+}
+
+table {
+    width: 36%;
+    border: 0;
+    border-style: none;
+}
+
+/* begin */
+input[type="text"] {
+    width: 300px;
+    height: 20px;
+    border: solid 2px;
+    border-color:  rgb(93, 153, 182);
+    margin: 2;
+}
+
+input[type="password"] {
+    width: 300px;
+    height: 20px;
+    border: solid 2px;
+    border-color:  rgb(93, 153, 182);
+    margin: 2;
+}
+
+select {
+    width: 140px;
+    height: 25px;
+    border: solid 2px;
+    border-color: rgb(93, 153, 182);
+}
+
+.input-role {
+    display: flex;
+    flex-grow: 1;
+}
+
+.input-checkbox {
+    display: inline-block;
+    position: relative;
+}
+
+input[type="radio"] {
+    
+    
+}

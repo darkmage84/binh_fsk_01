@@ -1,0 +1,60 @@
+* {
+
+}
+
+/* div begin */
+.content {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.info-contact {
+    margin: auto;
+    padding: 0 50px;
+}
+
+.map-location{
+    
+}
+/*div end */
+
+/* nav begin */
+.area-map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* nav end */
+
+/* ul begin */
+.list-area {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    
+}
+/* ul end */
+
+/* li begin */
+li {
+    display: flex;
+
+}
+
+/* span */
+span {
+    display: inline-block;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(75, 67, 67);
+}
+span a {
+    color: burlywood;
+}
+/* span end */
+
+/* table */
+table{
+    background-color: rgb(226, 232, 236);
+}
