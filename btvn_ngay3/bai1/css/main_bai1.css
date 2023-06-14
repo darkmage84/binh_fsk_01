@@ -8,8 +8,14 @@ footer {
 
 /*  */
 .content {
+    
     display: flex;
     margin: 16px 0;
+}
+
+.container {
+    
+    
 }
 
 .info-contact {

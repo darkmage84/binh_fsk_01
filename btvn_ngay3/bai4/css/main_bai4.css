@@ -9,6 +9,26 @@
     padding: 10px 0;
 }
 
+.chosse-area {
+    overflow: hidden;
+    margin: 15px 0;
+}
+.chosse-area a {
+    border-width: medium;
+    border-color: #d3b81e;
+    border-style:solid;
+    float: left;
+    display: block;
+    color: #d3b81e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.chosse-area a:hover {
+    background-color: #d3b81e;
+    color: white;
+}
+
 .info-contact {
     margin: auto;
     padding: 0 50px;
@@ -28,19 +48,21 @@
 /* nav end */
 
 /* ul begin */
-.list-area {
+/* .list-area {
     list-style: none;
     display: inline-block;
     position: relative;
     text-align: center;
-    
-}
+} */
 /* ul end */
 
 /* li begin */
 li {
-    display: flex;
-
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    line-height: 10px;
+    margin-left: -5px;
 }
 
 /* span */
