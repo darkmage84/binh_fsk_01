@@ -1,0 +1,24 @@
+/* .links li a[target] {
+    color: red;
+}
+có thuộc tính target, nằm trong thẻ a trong li trong class links sẽ đổi màu
+*/
+
+/* 
+ .links li a[href^="https://dantri.com.vn"] {
+    color: red;
+ }
+ có href bắt đầu bằng dantri.com.vn sẽ đổi màu 
+*/
+
+/* .links li a[href*="dantri.com.vn"] {
+    color: red;
+}
+trong href có dantri.com.vn sẽ đổi màu
+*/
+
+div[class^=stt] {
+    color: red;
+}
+
+

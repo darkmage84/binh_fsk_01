@@ -1,0 +1,63 @@
+.title:hover {
+    color: red;
+}
+
+.btn:hover {
+    color: red;
+}
+
+
+.btn:active { 
+    background: yellow;
+    color: red;
+}
+
+
+.btn:focus {
+    background: yellow;
+    color: red;
+}
+
+.form-item:disabled {
+    color: red;
+}
+/* thuộc tính disabled trong class form-item đổi màu đỏ */
+
+.content h2:not(.active) {
+    color: red;
+}
+/* thuộc tính không phải active của thẻ h2 trong lớp content sẽ đổi màu */
+
+.product h2:first-child {
+    color: red;
+}
+
+.product h2:last-child {
+    color: gray;
+}
+
+.product .heading:first-of-type {
+    color: red;
+}
+/* giá trị đầu tiên nằm trong thẻ heading và thẻ heading nằm trong thẻ product  */
+
+.product .heading:last-of-type {
+    color: red;
+}
+/* giá trị cuối cùng nằm trong thẻ heading và thẻ heading nằm trong thẻ product  */
+
+.product h2:nth-child(3) {
+    color: red;
+}
+/* giá trị thứ 3 của thẻ h2 trong class product sẽ đổi màu, bắt đầu từ i=1
+muốn giá trị chẵn: 2n, lẻ: 2n+1 
+nth-child sẽ đếm thẻ khác nhau, không nhất thiết phải là h2*/
+
+.product h2:nth-of-type(2n+1) {
+    color: red;
+}
+/* giá trị có số thứ tự lẻ của thẻ h2 trong class product sẽ đổi màu */
+
+
+
+

@@ -1,0 +1,69 @@
+* {
+
+}
+
+/* footer begin */
+footer {
+    display: flex;
+    /* width: 800px; */
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+
+}
+/* footer end */
+
+/*form subcribe begin */
+.form-subcribe {
+    margin: 5% 10%;
+    padding: 2% 2%; 
+    justify-content: center;
+    background: rgb(95, 108, 146);
+    border-radius: 9px;
+
+}
+
+.form-subcribe h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    color: rgb(229, 235, 220);
+}
+
+.form-subcribe h2 span {
+    color: rgb(188, 143, 52);
+}
+
+.form-subcribe p {
+    color: rgb(229, 235, 220);
+    font-size: 14px;
+}
+
+.form-subcribe input {
+    width: 200px;
+    height: 30px;
+    border: none;
+}
+
+.form-subcribe button {
+    width: 200px;
+    height: 32px;
+    border: none;
+    background-color: rgb(215, 179, 108);
+}
+
+.form-subcribe:hover input[type="email"]::placeholder {
+    color: rgb(188, 143, 52);
+}
+
+.form-subcribe:hover input[type="email"] {
+    background-color: #ddd;
+}
+
+.form-subcribe:hover button {
+    color: #fff;
+    background-color: rgb(188, 143, 52);
+}
+
+/*form subcribe end */
+
+

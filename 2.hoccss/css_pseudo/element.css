@@ -1,0 +1,45 @@
+/* .title::before {
+    content: '<';
+
+}
+
+.title::after {
+    content: '>';
+    
+}
+
+.contact::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    background: red;
+}
+
+.content::first-line {
+    color: firebrick;
+}
+dòng đầu tiên, văn bản đổi màu */
+
+/* 
+.content::first-letter {
+    font-size: 50px;
+}
+chữ cái đầu tiên 
+*/
+
+/* .content p::selection {
+    background: yellow;
+    color: red;
+}
+vùng được chọn sẽ có background là màu vàng và chữ màu đỏ */
+
+/* 
+.email::placeholder {
+    color: red;
+}
+chữ thay thế trong hộp nhập text đổi màu 
+*/
+
+
+

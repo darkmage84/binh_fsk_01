@@ -1,0 +1,85 @@
+* {
+
+}
+
+/* section begin */
+.reservation {
+    display:flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+/* section end */
+
+/* form begin */
+.form-booking {
+    background-color: antiquewhite;
+    justify-content: center;
+}
+
+.form-booking h2 {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 1px; /* không làm nét chữ mỏng hơn, chắc do font */
+    color: rgb(86, 69, 69);
+}
+
+.form-booking p {
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(71, 41, 41);
+}
+
+.form-booking .input-booking {
+    display: flex;
+}
+
+.form-booking input {
+    width: 250px;
+    height: 40px;
+    border-style:solid;
+    border-color: rgb(207, 203, 203);
+    margin: 10px 8px;
+
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.form-booking input::placeholder {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: rgb(83, 77, 77);
+}
+
+.form-booking button {
+    font-family: 'Alfa Slab One', cursive;
+    color: rgb(227, 232, 239);
+    background-color: brown;
+    border-radius: 2px;
+    border: none;
+    width: 256px;
+    height: 40px;
+    margin: 10px 8px;
+}
+
+.form-booking button:hover {
+    background-color: red;
+    color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

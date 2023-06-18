@@ -37,12 +37,11 @@ select {
     flex-grow: 1;
 }
 
-.input-checkbox {
+/* .input-checkbox {
     display: inline-block;
     position: relative;
-}
+} */
 
 input[type="radio"] {
-    
     
 }

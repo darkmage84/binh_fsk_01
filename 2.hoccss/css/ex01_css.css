@@ -1,0 +1,36 @@
+/* h1 ~ ul {
+    color: aqua;
+} 
+thẻ ul sau thẻ h1 và cùng cấp với h1 sẽ đổi màu
+*/ 
+
+/* 
+.content h2 ~ p {
+    color: red;
+}
+thẻ p sau thẻ h2 mà thẻ p cùng nằm trong class content sẽ đổi màu
+.content h2 ~ .children p {
+    color: red;
+}
+thẻ p trong class children nằm sau thẻ h2 trong class content sẽ đổi màu
+tương đương với
+.content h2 ~ p, 
+.content h2 ~ .children p {
+    color: red;
+} */
+
+/* .todolist input:checked ~ span {
+    color: red;
+    text-decoration: line-through;
+}
+thẻ span nằm trong input đã được chọn đổi màu đỏ và gạch ngang
+
+.menu li ~ li ~ li a {
+    color: red;
+} */
+
+.element h1 + p {
+    color: red;
+}
+
+

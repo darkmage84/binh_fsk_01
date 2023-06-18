@@ -1,0 +1,15 @@
+.paint:nth-of-type(1):checked + .content {
+    color: red;
+}
+
+.paint:nth-of-type(2):checked ~ .content {
+    color: green;
+}
+
+.paint:nth-of-type(1):checked + .content {
+    color: blue;
+}
+
+
+
+
