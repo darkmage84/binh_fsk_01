@@ -1,0 +1,4 @@
+/* overflow xử lí tràn dữ liệu trong 1 khối, có các giá trị: 
+mặc định: visible: tràn 
+hidden: ẩn phần bị tràn
+scroll: tạo thanh cuộn */

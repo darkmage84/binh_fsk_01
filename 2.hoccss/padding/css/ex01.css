@@ -1,0 +1,19 @@
+.box {
+  border: 1px solid red;
+  width: 200px;
+
+  padding: 20px;
+  /* chia đều 4 cạnh */
+
+  padding: 20px 10px;
+  /* top bottom và left right  */
+}
+
+span {
+  border: 1px solid red;
+  padding: 10px 20px 10px 20px;
+  /* padding nhận giá trị phần trăm sẽ tỉ lệ với width, cả 4 cạnh */
+  /* aspect ratio boxes chia tỉ lệnh 16:9 ...  */
+
+  display: inline-block;
+}

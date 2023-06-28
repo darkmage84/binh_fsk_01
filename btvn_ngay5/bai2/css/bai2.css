@@ -1,0 +1,57 @@
+* {
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* form begin */
+form {
+  display: block;
+  width: 70%;
+}
+
+.bonus-info {
+  display: block;
+  width: 100%;
+}
+
+.bonus-info label {
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(189, 103, 46);
+  color: #fff;
+  margin: 10px 0;
+}
+
+.bonus-info input[type="checkbox"] {
+  display: none;
+}
+
+.bonus-info i {
+  margin: 0 5px;
+  padding: 0 5px;
+}
+
+/* dấu trừ trong thẻ i */
+.bonus-info .fa-minus {
+  display: none;
+}
+
+.bonus-info .info p {
+  display: none;
+  padding: 10px 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.bonus-info input:checked ~ label i.fa-minus {
+  display: block;
+}
+
+.bonus-info input:checked ~ label i.fa-plus {
+  display: none;
+}
+
+.bonus-info input:checked ~ .bonus-info .info {
+  display: block;
+}

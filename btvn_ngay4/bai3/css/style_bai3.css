@@ -62,20 +62,17 @@ body {
     margin: 10px 10px;
 }
 
-.best-seller-product img {
+.product-info img {
     width: 200px;
     margin: 10px 10px;
     margin-left: 20px;
     border-radius: 8px;
 }
-.best-seller-product img:hover {
-    
-}
 
 
 .product-info h3 {
     text-align: center;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .product-info a {

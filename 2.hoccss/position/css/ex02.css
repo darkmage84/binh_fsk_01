@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product {
+  width: 300px;
+  margin: 30px auto;
+  border: 1px solid #fff;
+  position: relative;
+}
+
+.product .product-img {
+  position: relative;
+}
+
+.product .product-info {
+  padding: 15px;
+}
+
+.product .sale-off {
+  position: absolute;
+  background-color: red;
+  right: 5px;
+  bottom: 5px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 3px 5px;
+}
+
+.product .overlay {
+  /* tạo 1 lớp phủ lên thẻ div cha */
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* có thể thay thế bằng 1 thuộc tính: inset: 0 */
+  background-color: #0000003d;
+}

@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.box {
+  width: 400px;
+  border: 1px solid red;
+  margin: 30px auto;
+}
+
+.box h2 {
+  padding: 10px;
+  background-color: green;
+  border: 1px solid #fff;
+  width: 200px;
+  color: #fff;
+}
+
+.item-2 {
+  /* position: relative;
+  top: -20px;
+  right: calc(100% - 200px); */
+
+  position: absolute;
+}
+
+.item-3 {
+  position: relative;
+}
+
+/* 
+position: 
+static: không có position
+relative: tương đối
+absolute: tuyệt đối
+fixed: cố định 
+
+trừ static, có 5 thuộc tính:
+top
+left
+right
+bottom
+z-index
+
+ưu tiên sector có set position, nếu đều có position, xét theo thẻ html, hoặc có z-index
+*/

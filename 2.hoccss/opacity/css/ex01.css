@@ -1,0 +1,6 @@
+.box:hover img {
+  opacity: 0.5;
+  /* làm mờ nội dung, nhận giá trị từ 0 đến 1 */
+  filter: grayscale(0.5);
+  /* filter css generator  */
+}

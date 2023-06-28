@@ -1,0 +1,8 @@
+.gallery img {
+  opacity: 0.1;
+  filter: grayscale(0.5);
+}
+
+.gallery img:hover {
+  opacity: 0.5;
+}

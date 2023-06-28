@@ -1,0 +1,16 @@
+.box {
+  width: 500px;
+}
+
+span {
+  width: 200px;
+  border: 1px solid red;
+  margin-top: 50%;
+  /* margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px; */
+  display: inline-block;
+}
+
+/* margin nhận giá trị phần trăm với right, left tỉ lệ với width còn top, bottom tỉ lệ với height */

@@ -1,0 +1,32 @@
+.content a{
+    text-decoration: line-through;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+
+.content p {
+    text-decoration: underline;
+}
+/* text-decoration 3 kiểu: gạch chân, gạch trên đầu, gạch ngang */
+/* text-transform: uppercase viết hoa toàn bộ, lowercase: viết thường, capitalize: viết hoa chữ cái đầu */
+/* letter-spacing: khoảng cách giữa các chữ cái */
+/* word-spacing: khoảng cách giữa các từ */
+/* text-indent: khoảng cách đầu dòng so với lề/ thụt đầu dòng */
+
+body {
+    background-color: bisque;
+    background-image: url();
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-position: top; 
+    /* nhận các giá trị top, bottom, right, left, phần trăm */
+    background-attachment: fixed;
+    /* fixed để ảnh cố định, khi trượt thanh cuộn mà ảnh được giữ cố định */
+
+    /* ngoài background-size, các thuộc tính còn lại đều có thể đưa vào chung 1 thuộc tính background  */
+}
+
+.image p {
+    background-color: aqua;
+}

@@ -1,0 +1,67 @@
+/* .text1 {
+    color: antiquewhite;
+}
+
+.text2 {
+    color: rgba(147, 188, 12, 0.304) ;   
+}
+
+.text3 {
+    color: hsl(hue, saturation, lightness);
+} */
+
+/* color: initail trả về màu mặc định trước khi set giá trị color  */
+
+body {
+    color: aqua;
+}
+
+.content {
+    color: rgba(0, 0, 255, 0.652);
+}
+
+.content p {
+    color: inherit;
+}
+
+
+/* color: inherit trả về màu dựa theo thẻ cha gần nhất, so dần lên cho đến khi trả về màu mặc định */
+/* font-size: 1px = 1 điểm ảnh, 1pt = 1.3 px  đơn vị tuyệt đối, giá trị mặc định của trình duyệt: 16px */
+
+/* đơn vị tương đối */
+/* font-size = 1.2em cỡ chữ sẽ bằng 1.2 tỉ lệ so với thành phần cha trực tiếp  */
+/* font-size = 1.5rem cỡ chữ sẽ bằng 1.5 so với thành phần cha lớn nhất  */
+
+/* =>> nên sử dụng đơn vị tương đối khi thiết kế giao diện */
+
+/* line-height = 20px có tác dụng dãn dòng, chiều cao của dòng */
+/* =>> nên để ở đại lượng tương đối, line-hight = 1.5 tức dãn dòng = font-size nhân 1.5  */
+
+/*
+secter với @ ở trước được gọi là at-rule
+
+nạp font qua @font-face:
+1. tải font về máy đuôi .ttf, lưu vào 1 file font ngang hàng với css
+2. @font-face {
+    font-family: Roboto;
+    src: url("../font/roboto-medium.ttf")
+    }
+3. font-family = Roboto
+Nếu tên font chữ chỉ có 1 từ. Nếu có 2 từ trở lên, để trong dấu nháy kép.
+
+nếu có nhiều font roboto nhưng nhiều kiểu font khác nhau cùng 1 họ, medium, regular, bold
+ta đặt nhiều url đó cùng tên font-family: Roboto và thêm thuộc tính font-weight, regular=400, medium=500, bold=700 .... hoặc normal, medium, bold
+khi sử dụng font, ta thêm thuộc tính font-weight với giá trị tương ứng với font muốn dùng, nên dùng số.
+
+font-family = "Open Sans", Roboto; tức font là open sans, nếu open sans lỗi, font sẽ là roboto.
+font-family = "Open Sans", Roboto, sans-serif; nếu 2 font trước lỗi, sans-serif là font hệ thống sẽ được áp dụng
+
+nạp link font.google: 2 cách
+1.
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+2.
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+*/

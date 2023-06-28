@@ -1,0 +1,9 @@
+/* box-sizing: border-box; 
+giữ nguyên giá trị width và height khi có thêm thuộc tính border và margin */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* reset css */
+}

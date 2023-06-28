@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Asap, sans-serif;
+  font-weight: 400;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner-info {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+
+.banner-main-info {
+  background-color: #ffffffe1;
+  padding: 20px 10px;
+  border-radius: 5px;
+  line-height: 1.3;
+}
+
+.banner-main-info h1 {
+  color: #bf4240db;
+}
+
+.banner-main-info p {
+  color: #3f3424;
+}
+
+.banner-info a {
+  position: relative;
+  left: 70%;
+
+  background-color: #bf4240;
+  text-decoration: none;
+  color: #ffffffe1;
+  font-size: 22px;
+  padding: 10px 20px;
+}

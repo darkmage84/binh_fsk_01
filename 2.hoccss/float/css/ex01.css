@@ -1,0 +1,49 @@
+.box {
+  border: 1px solid red;
+  max-width: 80%;
+}
+
+/* cách để viên của box không bị nhảy lên */
+/* cách 1 
+    .box{
+        clear: both;
+    }
+*/
+
+/* cách 2  */
+.box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* float: non/left/right trôi theo phần tử cha  */
+/* có float thì sẽ cần có clear: both để tránh tự động trôi */
+
+.col-1 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  color: aliceblue;
+  float: left;
+}
+
+.col-2 {
+  width: 100px;
+  height: 120px;
+  background-color: greenyellow;
+  color: aliceblue;
+  float: left;
+}
+
+/* .text {
+  clear: both;
+} */
+
+.col-3 {
+  width: 100px;
+  height: 150px;
+  background-color: rgb(44, 20, 150);
+  color: aliceblue;
+  float: left;
+}
