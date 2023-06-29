@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.songs {
+  counter-reset: song;
+}
+
+.songs .song-item {
+  padding: 10px;
+  counter-increment: song;
+}
+
+.songs .song-item::before {
+  content: counter(song);
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: aqua;
+  text-align: center;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.songs .song-item p {
+  padding-left: 30px;
+}
+
+/* bộ đếm nhỏ hơn */
+.songs .children {
+  counter-reset: song-child;
+}
+
+.songs .children .song-item {
+  counter-increment: song-child;
+}
+
+.song .children .song-item::before {
+  content: counter(song) "." counter(song-child);
+}

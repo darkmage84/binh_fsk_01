@@ -1,0 +1,21 @@
+form {
+  display: block;
+}
+
+input[type="checkbox"]:checked ~ label {
+  display: none;
+}
+
+input[type="checkbox"]:checked label::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  width: 5px;
+  height: 5px;
+  border: 1px solid green;
+  border-radius: 3px;
+  content: "\f00c";
+}
+
+input[type="checkbox"]:checked label::after {
+  content: "\f00c";
+}

@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 300px;
+  border: 1px solid red;
+  margin: 0 auto;
+
+  /* list-style-position: inside; */
+}
+
+.box ul {
+  /* list-style-position: inside; */
+  /* chấm tròn nằm bên trong đường viền */
+  /* list-style-type: none; */
+
+  list-style: upper-alpha outside;
+}
+
+.songs {
+  border: 1px solid red;
+  width: 300px;
+  margin: 30px;
+}
+
+.songs h2 {
+  display: list-item;
+  list-style: decimal outside;
+}

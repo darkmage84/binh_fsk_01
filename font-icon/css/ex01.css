@@ -1,0 +1,44 @@
+/* .location-icon {
+  color: red;
+  font-size: 2rem;
+} */
+
+ul.social-contact {
+  width: 700px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  /* padding-top: ; */
+}
+
+ul.social-contact li a::before {
+  font-family: "Font Awesome 6 Brands";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(176, 114, 22);
+  text-align: center;
+  margin-right: 5px;
+  /* line-height: 10px; */
+  /* padding-top: 1px; */
+  color: #fff;
+}
+
+ul.social-contact li.facebook a::before {
+  content: "\f39e";
+}
+
+ul.social-contact li.instagram a::before {
+  content: "\e055";
+}
+
+ul.social-contact li.google a::before {
+  content: "\f1a0";
+}
