@@ -65,6 +65,16 @@ body {
   font-weight: 400;
   font-size: 18px;
 }
+.shopping-cart-list span.quantity {
+  border: 2px solid rgba(0, 0, 0, 0.351);
+  border-radius: 20px;
+  width: 80px;
+  text-align: center;
+
+  position: absolute;
+  bottom: 70px;
+  left: 130px;
+}
 
 .shopping-cart-subtotal {
   padding-left: 30px;
