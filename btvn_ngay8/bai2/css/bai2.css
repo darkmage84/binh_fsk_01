@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  /* font-weight: 300; */
+  background-color: grey;
+}
+
+.content {
+  width: 100%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: right;
+}
+
+.shopping-cart-area {
+  width: 500px;
+  background-color: aliceblue;
+}
+
+.shopping-cart-title {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(128, 128, 128, 0.305);
+  padding-left: 30px;
+  padding-top: 6px;
+}
+
+.shopping-cart-list {
+  padding-left: 30px;
+  height: 400px;
+  overflow: scroll;
+}
+
+.shopping-cart-list .item {
+  height: 200px;
+
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.296);
+  position: relative;
+}
+
+.shopping-cart-list img {
+  width: 100px;
+  height: 80px;
+}
+
+.shopping-cart-list span.name-item {
+  position: absolute;
+  padding-left: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.593);
+}
+.shopping-cart-list span.price-item {
+  position: absolute;
+  bottom: 70px;
+  right: 50px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.shopping-cart-subtotal {
+  padding-left: 30px;
+}
+
+.shopping-cart-subtotal b.subtotal {
+  font-size: 2rem;
+}
+.shopping-cart-subtotal span {
+  color: #bf4240;
+}
+.shopping-cart-subtotal p.taxes {
+  color: rgba(0, 0, 0, 0.505);
+}
+
+.shopping-cart-subtotal .view-cart {
+  width: 440px;
+  height: 50px;
+  margin: 10px 0;
+  padding-left: 30px;
+
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: aliceblue;
+
+  font-size: 18px;
+  color: grey;
+  font-weight: 500;
+}
+.shopping-cart-subtotal .add-to-cart {
+  width: 440px;
+  height: 50px;
+  margin: 10px 0;
+  padding-left: 10px;
+
+  border: none;
+  border-radius: 5px;
+  background-color: blue;
+
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.shopping-cart-footer {
+  margin: 20px 0;
+}
+.shopping-cart-footer i {
+  font-size: 25px;
+  color: rgba(0, 0, 255, 0.723);
+  margin-left: 30px;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 255, 0.723);
+  border-radius: 50%;
+}
+.shopping-cart-footer span {
+  padding-left: 30px;
+  font-size: 20px;
+  /* font-weight: 500; */
+}
