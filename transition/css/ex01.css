@@ -1,0 +1,27 @@
+/* 
+    trasition-property: | tên thuộc tính, mỗi thuộc tính sẽ cách nhau , 
+    trasition-duration: đơn vị s hoặc ms | tổng thời gian hoàn thành transition
+    transition-timing-function: 
+    + linear: tốc độ đều
+    + ease: lúc đầu nhanh, gần cuối chậm
+    + ease-in: lúc đầu chậm, gần cuối nhanh
+    + ease-out: lúc đầu nhanh gần cuối chậm
+    + ease-in-out: ban đầu chậm, giữa nhanh, gần cuối chậm
+
+*/
+
+.content {
+  border: 1px solid red;
+
+  transition: 3s;
+  /* transition-delay: 2s; 
+     sau 2 giây thì thực hiện transition
+  */
+  transition-property: all;
+}
+
+.content:hover {
+  padding-left: 250px;
+  padding-top: 100px;
+  color: red;
+}

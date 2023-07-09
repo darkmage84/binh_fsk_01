@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+.container {
+}
+
+.title {
+  justify-content: center;
+  text-align: center;
+
+  padding: 50px;
+  position: relative;
+}
+
+.title h2 {
+  color: rgba(0, 0, 255, 0.719);
+
+  padding-bottom: 8px;
+}
+
+.title span {
+  color: red;
+}
+
+.gach-chan-1 {
+  content: "";
+  width: 60px;
+  border: 3px solid rgba(255, 0, 0, 0.707);
+  border-radius: 5px;
+  position: absolute;
+  left: 680px;
+}
+.gach-chan-2 {
+  content: "";
+  width: 60px;
+  border: 3px solid red;
+  border-radius: 5px;
+  position: absolute;
+  left: 790px;
+}
+.gach-chan-3 {
+  content: "";
+  width: 32px;
+  border: 3px solid rgba(255, 0, 0, 0.707);
+  border-radius: 5px;
+  position: absolute;
+  left: 750px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-around;
+
+  padding: 0 50px;
+  width: 70%;
+
+  counter-reset: items;
+}
+
+.list-item .item {
+  counter-increment: items;
+}
+
+.item {
+  padding: 0 20px;
+  margin: 0 10px;
+
+  width: 380px;
+  position: relative;
+  box-shadow: 0px 0px 30px rgba(215, 228, 249, 0.5);
+
+  position: relative;
+
+  /* background-color: blue; */
+}
+
+.img-item {
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.item img {
+  width: 130px;
+  border: 3px dashed blue;
+  /* border-style: dashed; */
+  border-radius: 40%;
+}
+
+.item h3 {
+  color: blue;
+  padding: 10px 0;
+  text-align: start;
+}
+
+.item p {
+  /* line-height: 1.5rem; */
+  text-align: justify;
+  /* word-spacing: 0.5em; */
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+.item::after {
+  content: "0" counter(items);
+  font-size: 100px;
+  color: rgba(0, 0, 255, 0.062);
+  line-height: 1.5em;
+
+  position: absolute;
+  right: 10px;
+  top: 90px;
+}
+
+.item::before {
+  content: "kkk";
+  position: absolute;
+  top: 100%;
+  /* left: 0; */
+  /* bottom: 0; */
+  background-color: blue;
+  transition: bottom 0.4s linear;
+}
+
+.item:hover::before {
+  background-color: blue;
+  color: #fff;
+}

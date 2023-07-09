@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgba(128, 128, 128, 0.323);
+}
+
+.container {
+  width: 800px;
+  max-width: 1200px;
+  margin: 50px 200px;
+  background-color: #fff;
+}
+
+.menu {
+}
+.menu ul {
+  list-style-type: none;
+
+  display: flex;
+  justify-content: space-around;
+}
+.menu li {
+  width: auto;
+  height: 50px;
+  padding: 15px 20px;
+  margin: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.323);
+
+  text-align: center;
+  cursor: pointer;
+}
+li:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+input {
+  display: none;
+}
+
+.content {
+  padding: 20px 30px;
+  overflow-x: scroll;
+  border-top: 1px solid rgba(128, 128, 128, 0.323);
+}
+.content h2 {
+  font-size: 2em;
+}
+.content p {
+  padding: 10px 0;
+  line-height: 1.5em;
+}
+
+.content-slideshow,
+.content-levenshtein,
+.content-progresso,
+.content-php {
+  display: none;
+}
+
+input[id="slideshow"]:checked ~ .content-slideshow {
+  display: block;
+}
+input[id="levenshtein"]:checked ~ .content-levenshtein {
+  display: block;
+}
+input[id="progresso"]:checked ~ .content-progresso {
+  display: block;
+}
+input[id="php"]:checked ~ .content-php {
+  display: block;
+}
+
+input[id="slideshow"]:checked ~ .content-slideshow {
+  animation: myrotate 0.4s linear;
+}
+input[id="levenshtein"]:checked ~ .content-levenshtein {
+  animation: myrotate 0.4s linear;
+}
+input[id="progresso"]:checked ~ .content-progresso {
+  animation: myrotate 0.4s linear;
+}
+input[id="php"]:checked ~ .content-php {
+  animation: myrotate 0.4s linear;
+}
+
+@keyframes myrotate {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}

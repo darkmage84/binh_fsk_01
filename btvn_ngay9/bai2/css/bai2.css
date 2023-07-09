@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.container {
+  width: 1200px;
+
+  margin: 30px 50px;
+}
+
+.list-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 15px;
+}
+
+.item {
+  border: 2px solid rgba(0, 0, 0, 0.115);
+
+  width: 305px;
+  height: 250px;
+  padding: 30px;
+
+  position: relative;
+}
+
+.item i {
+  font-size: 2.5em;
+  color: #bf4240bb;
+  padding-bottom: 20px;
+}
+
+.item h3 {
+  font-weight: 600;
+  padding-bottom: 7px;
+  padding-right: 5px;
+}
+
+.item p {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.495);
+  padding-bottom: 10px;
+}
+
+.item .text {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  top: 90%;
+  left: 25px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.item .text::after {
+  content: " => ";
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.text:hover::after {
+  border: none;
+  background-color: #fff;
+  color: #bf4240bb;
+}
+
+.item span {
+  position: absolute;
+  top: 100px;
+  left: 25px;
+  z-index: 1;
+}
+
+.item::before {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/laptop.jpg);
+  /* background-color: #bf4240bb; */
+  opacity: 0.1;
+  /* transition: all 0.4s linear; */
+}
+
+.item:hover::before {
+  top: 0;
+}
+.item:hover i {
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.item:hover span {
+  top: 35px;
+  transition: all 0.8s linear;
+}
+.item:hover .text {
+  opacity: 1;
+  top: 70%;
+  transition: all 0.8s linear;
+}

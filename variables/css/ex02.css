@@ -1,0 +1,8 @@
+:root {
+  --just-here: yellow;
+}
+
+h2 {
+  --just-here: yellow;
+}
+/* khai báo lại biến --just-here */

@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgba(12, 133, 203, 0.575);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  max-width: 2000px;
+}
+
+.dash-board {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  color: #fff;
+  text-align: right;
+}
+.dash-board h1 {
+  padding-bottom: 25px;
+  font-size: 2.5em;
+}
+.dash-board span {
+  font-size: 22px;
+}
+.dash-board p {
+  font-size: 12px;
+}
+
+.menu-area {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.menu-area input {
+  position: relative;
+  z-index: 1;
+}
+
+.menu-area i {
+  position: relative;
+  top: 25px;
+  left: 25px;
+
+  color: blue;
+  font-size: 30px;
+  z-index: 1;
+}
+
+span.icon-background::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  top: -125px;
+  left: -125px;
+  transition: all 0.2s linear;
+}
+
+.menu-area i.fa-arrow-right {
+  visibility: hidden;
+}
+
+input.menu:checked + label i.fa-bars {
+  display: none;
+}
+input.menu:checked + label i.fa-arrow-right {
+  visibility: visible;
+}
+input.menu:checked + label .icon-background::after {
+  border-radius: 0;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 800px;
+}
+
+ul.list-item {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+
+  display: none;
+  list-style-type: none;
+}
+ul.list-item li {
+  width: 130px;
+  height: 25px;
+}
+li:hover {
+  background-color: gray;
+}
+ul.list-item a {
+  text-decoration: none;
+
+  padding: 2px 30px;
+}
+a:hover {
+  color: #fff;
+  transition: all 0.1s linear;
+}
+input.menu:checked + label ul.list-item {
+  display: block;
+}

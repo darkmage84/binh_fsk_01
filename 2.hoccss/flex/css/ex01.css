@@ -12,19 +12,46 @@
 }
 
 .item {
-  background-color: aqua;
+  background-color: green;
   padding: 2px;
   margin: 1px;
+  width: 80px;
 }
 
 .row {
   display: flex;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
   height: 300px;
-  gap: 10px;
+  /* gap: 10px; */
   /* có 2 thuộc tính row-gap và column-gap: ; */
+}
+
+/* .item:nth-of-type(4) {
+  color: red;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.item:nth-child(3) {
+  align-self: center;
+} */
+
+/* sắp xếp theo thứ tự item 3 - 2 - 4 - 1  */
+
+.item:nth-child(3) {
+  order: 1;
+}
+.item:nth-child(2) {
+  order: 2;
+}
+.item:nth-child(1) {
+  order: 3;
+}
+.item:nth-child(4) {
+  order: 4;
 }

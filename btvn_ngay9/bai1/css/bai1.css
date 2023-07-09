@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.container {
+  display: flex;
+  margin: 20px;
+}
+
+.time-line {
+  border: 1px solid green;
+  width: 1000px;
+  max-width: 1100px;
+
+  margin-right: 200px;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid red;
+
+  height: 150px;
+}
+
+.item-content {
+  text-align: right;
+  padding-left: 200px;
+  padding-right: 20px;
+
+  position: absolute;
+}
+.item-content h2 {
+  font-family: "Space Grotesk", sans-serif;
+  padding: 10px 0;
+}
+.item-content p {
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.596);
+  padding-bottom: 10px;
+}
+.item-content span {
+  padding: 0 8px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.801);
+  background-color: rgba(0, 0, 0, 0.152);
+  border-radius: 15px;
+}
+
+.dot {
+  padding-top: 15px;
+  position: relative;
+  left: 620px;
+
+  color: green;
+}
+.dot::after {
+  content: "";
+  width: 300px;
+  border: 1px solid black;
+}
+
+.item-time {
+  padding-left: 20px;
+  padding-top: 15px;
+  font-family: "Inter", sans-serif;
+
+  position: absolute;
+  left: 650px;
+}
+
+.item:hover .item-time {
+  left: 500px;
+  transition: all 0.3s linear;
+}
+.item:hover .item-content {
+  left: 650px;
+  transform: rotate(180eg);
+  transition: all 0.4s linear;
+}
