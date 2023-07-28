@@ -1,0 +1,22 @@
+Toán tử và Biểu thức
+
+1. toán tử và biểu thức
+
++, -, *, /, % (chia lấy dư), ** (lũy thừa)
+++, --
+
+2. toán tử logic
+
+> , <, >=, <=, ==, ===, !=, !==
+
+3. toán tử gán
+   =, +=, -=, \*=, /=
+
+4. toán tử lý luận
+   &&, ||, !
+   (and, or, not)
+
+5. toán tử 3 ngôi
+
+6. toán tử nullish (??)
+

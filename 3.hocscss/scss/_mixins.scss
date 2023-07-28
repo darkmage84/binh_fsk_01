@@ -1,0 +1,76 @@
+// @mixin size {
+//   width: 200px;
+//   height: 200px;
+// }
+//cố định
+
+//tùy biến, truyền tham số cho width và height
+// @mixin size($width, $height) {
+//   width: $width;
+//   height: $height;
+// }
+
+//đặt mặc định khi không muốn truyền tham số như sau:
+@mixin size($width: 200px, $height: 200px) {
+  width: $width;
+  height: $height;
+}
+
+// truyền 1 tham số thì là hình vuông, 2 tham số là hình chữ nhật
+@mixin size($all: null, $width: $all, $height: $all) {
+  width: $width;
+  height: $height;
+}
+// hoặc
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin rounded {
+  border-radius: 16px;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin gridContainer($columns, $spcaing) {
+  // --columns: 4;
+  // --spacing: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  background-color: grey;
+  row-gap: $spcaing;
+  margin-left: calc($spcaing * -1);
+
+  > * {
+    width: calc(100% / $columns - $spcaing);
+    margin-left: $spcaing;
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+
+// mobile, tablet, pc
+
+@mixin screen($breakPoint) {
+  @if $breakPoint == mobile {
+    @media (min-width: 576px) {
+      @content;
+    }
+  }
+  @if $breakPoint == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakPoint == pc {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+}

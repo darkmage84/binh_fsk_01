@@ -1,0 +1,59 @@
+@import "mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.h1 {
+  color: red;
+  font-style: italic;
+}
+
+.h2 {
+  font-size: 18px;
+  @extend .h1;
+}
+// // extend kế thừa
+
+// placeholder
+%textItalic {
+  font-style: italic;
+}
+
+.box {
+  //   @include size;
+  //   @include size(400px, 200px);
+  @include size(200px);
+  background-color: red;
+  @include rounded;
+  @include flexCenter;
+
+  @extend %textItalic;
+  @extend .h2;
+}
+
+// .container {
+//   --columns: 4;
+//   --spacing: 10px;
+
+//   display: flex;
+//   flex-wrap: wrap;
+//   background-color: grey;
+//   row-gap: var(--spacing);
+//   margin-left: calc(var(--spacing) * -1);
+
+//   > .item {
+//     width: calc(100% / var(--columns) - var(--spacing));
+//     margin-left: var(--spacing);
+//     background: orange;
+//     font-size: 30px;
+//     font-weight: 600;
+//   }
+// }
+
+.container {
+  @include gridContainer(6, 20px);
+}

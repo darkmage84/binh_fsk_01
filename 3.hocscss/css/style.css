@@ -1,0 +1,27 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  padding: 10px;
+}
+.header .header__inner {
+  color: red;
+}
+
+.title .menu > li {
+  padding: 10px;
+  margin: 0 10px;
+}
+.title .menu > li a {
+  text-decoration: none;
+}
+.title .menu > li::after {
+  content: "";
+}
+
+/*# sourceMappingURL=style.css.map */

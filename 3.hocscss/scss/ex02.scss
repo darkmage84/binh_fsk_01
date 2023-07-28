@@ -1,0 +1,25 @@
+@import "mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.container {
+  @include gridContainer(3, 20px);
+
+  @include screen(mobile) {
+    @include gridContainer(1, 20px);
+  }
+
+  @include screen(tablet) {
+    @include gridContainer(2, 20px);
+  }
+
+  .card {
+    padding: 20px;
+    background: orange;
+  }
+}
