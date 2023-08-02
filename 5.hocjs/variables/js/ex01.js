@@ -28,3 +28,7 @@ document.write(welcome);
 
 // ký hiệu escape \
 // dấu backtick (`) dưới ESC
+
+
+console.log(greeting);
+var greeting = 'say Hello';
