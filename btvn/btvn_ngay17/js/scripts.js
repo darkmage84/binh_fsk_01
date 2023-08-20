@@ -183,4 +183,4 @@ function drawTriangle(number) {
   console.log(line);
 }
 
-drawTriangle(5);
+drawTriangle(8);
