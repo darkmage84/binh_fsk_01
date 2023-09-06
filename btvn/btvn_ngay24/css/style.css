@@ -1,0 +1,64 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* end fonts */
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #8758ff;
+}
+
+/* 
+.App {
+  text-align: center;
+} */
+
+.wrapper {
+  background: #1a1a40;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.wrapper h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.todo-form {
+  width: 100%;
+}
+
+.todo-input {
+  width: 300px;
+
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}

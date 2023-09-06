@@ -29,6 +29,9 @@ Number.prototype.getCurrency = function (currency) {
 console.log(price1.getCurrency("đ"));
 console.log(parseInt(price2).getCurrency("đ"));
 
+// Bài 3:
+console.log("Bài 3:");
+
 // Bài 4:
 console.log("Bài 4:");
 

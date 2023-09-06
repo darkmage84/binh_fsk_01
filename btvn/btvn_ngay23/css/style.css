@@ -1,0 +1,281 @@
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+/* end: reset css */
+
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+/* end: fonts */
+
+/* login box */
+.open-login {
+  padding: 16px 30px;
+  margin: 40px;
+  background: green;
+  color: #fff;
+}
+
+.modal-auth {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  transition-property: opacity, visibility;
+}
+
+.modal-auth.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-auth .modal-dialog {
+  width: 400px;
+  background: #fff;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 40px;
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.modal-auth .overlay {
+  background: #00000076;
+  position: fixed;
+  inset: 0;
+}
+
+.modal-auth .tab-nav ul {
+  display: flex;
+}
+
+.modal-auth .tab-nav ul li {
+  flex: 1 1 auto;
+}
+
+.modal-auth .tab-nav ul li a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  background: #eeeeee;
+  font-size: 20px;
+  color: #1111118f;
+}
+
+.modal-auth .tab-nav ul li:first-child a {
+  border-radius: 5px 0 0 0;
+}
+
+.modal-auth .tab-nav ul li:last-child a {
+  border-radius: 0 5px 0 0;
+}
+
+.modal-auth .tab-nav ul li a.active {
+  color: #111;
+  background: #fff;
+}
+
+.modal-auth .tab-content {
+  padding: 20px;
+}
+
+.modal-auth .tab-content .tab-panel:not(.active) {
+  display: none;
+}
+
+/* start #login */
+.modal-auth .login-form .form-group {
+  margin-bottom: 15px;
+}
+
+.modal-auth .login-form .auth-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.modal-auth .login-form .auth-social button {
+  max-width: 100%;
+  width: calc(50% - 10px);
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e2e8f0;
+  border: none;
+  border-radius: 6px;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal-auth .login-form .auth-social button::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: 0 5px 0 0;
+}
+.modal-auth .login-form .auth-social button.google::before {
+  background-image: url(https://cdnweb.dantri.com.vn/dist/7d0beed56ca1d379fbc0.svg);
+}
+.modal-auth .login-form .auth-social button.facebook::before {
+  width: 30px;
+  height: 30px;
+  background-image: url(https://cdnweb.dantri.com.vn/dist/f5ae7e06d5a6fc5ebaff.svg);
+}
+
+.modal-auth .login-form .auth-social span {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.modal-auth .login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-auth .login-form input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #efefef;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.modal-auth .login-form .btn {
+  width: 100%;
+  height: 44px;
+  font-weight: 600;
+  font-size: 16px;
+  background: green;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+
+.modal-auth .login-form .error {
+  color: red;
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+.modal-auth .login-form .has-error .field-item {
+  border-color: red;
+}
+
+.modal-auth .login-form .msg {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.modal-auth .login-form .password-field {
+  position: relative;
+}
+
+.modal-auth .login-form .password-field .show-password {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal-auth .login-form .password-field .show-password svg:first-child {
+  display: none;
+}
+
+.modal-auth .login-form .password-field .show-password.hide svg:first-child {
+  display: block;
+}
+
+.modal-auth .login-form .password-field .show-password.hide svg + svg {
+  display: none;
+}
+/* end #login */
+
+/* start #register */
+.modal-auth .register-form .form-group {
+  margin-bottom: 15px;
+}
+
+.modal-auth .register-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-auth .register-form input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #efefef;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.modal-auth .register-form .btn {
+  width: 100%;
+  height: 44px;
+  font-weight: 600;
+  font-size: 16px;
+  background: green;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+
+.modal-auth .register-form .msg {
+  color: #1a1a1a;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.modal-auth .register-form .password-field {
+  position: relative;
+}
+.modal-auth .register-form .password-field .show-password {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.modal-auth .register-form .password-field .show-password svg:first-child {
+  display: none;
+}
+.modal-auth .register-form .password-field .show-password.hide svg:first-child {
+  display: block;
+}
+.modal-auth .register-form .password-field .show-password.hide svg + svg {
+  display: none;
+}
