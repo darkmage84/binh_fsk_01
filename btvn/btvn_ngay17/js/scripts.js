@@ -139,7 +139,6 @@ function isPrime(number) {
   for (var i = 2; i < number; i++) {
     if (number % i === 0) {
       return false;
-      i = number;
     }
   }
   return true;
@@ -184,3 +183,78 @@ function drawTriangle(number) {
 }
 
 drawTriangle(8);
+
+// ---------------------------------------------------------------
+
+// Bài 6: Vẽ bàn cờ vua
+// Học viên sử dụng kiến thức đã học về vòng lặp, câu lệnh rẽ nhánh để vẽ bàn cờ vua
+
+console.log("Bai 6:");
+
+var columns = "";
+
+for (var row = 0; row < 8; row++) {
+  columns += `<tr>`;
+  for (var col = 0; col < 8; col++) {
+    var check = row + col;
+    columns += `<td ${check % 2 !== 0 ? 'class="black"' : ""}></td>`;
+  }
+  columns += `</tr>`;
+}
+
+var html = `<table width="50%" border ="1" cellspacing="0" cellpadding="0">${columns}</table>`;
+
+document.write(html);
+
+// ---------------------------------------------------------------
+
+// Bài 7: Vẽ bảng cửu chương
+// Học viên sử dụng kiến thức đã học để vẽ bảng cửu chương từ 1 đến 10
+
+console.log("Bai 7:");
+
+var columns = "";
+
+// từ 1 đến 5
+columns += `<tr>`;
+for (var i = 1; i <= 5; i++) {
+  columns += `<td>`;
+  for (var j = 1; j <= 10; j++) {
+    columns += `${i}x${j}=${i * j}<br>`;
+  }
+  columns += `</td>`;
+}
+columns += `</tr>`;
+
+// từ 6 đến 10
+columns += `<tr>`;
+for (var i = 6; i <= 10; i++) {
+  columns += `<td>`;
+  for (var j = 1; j <= 10; j++) {
+    columns += `${i}x${j}=${i * j}<br>`;
+  }
+  columns += `</td>`;
+}
+columns += `</tr>`;
+
+var html = `<table width="50%" border ="0" cellspacing="0" cellpadding="0">${columns}</table>`;
+
+document.write(html);
+
+// ---------------------------------------------------------------
+
+// Bài 8: Tính giá trị biểu thức không dùng vòng lặp
+// Tính giá trị biểu thức: S = 1 + 1/2 + 1/3 + 1/4 + 1/5 +…+1/N
+
+console.log("Bai 8:");
+
+function getTotal(number) {
+  if (number === 1) {
+    return 1;
+  }
+
+  return 1 / number + getTotal(number - 1);
+}
+
+var n = 8;
+console.log(getTotal(n));

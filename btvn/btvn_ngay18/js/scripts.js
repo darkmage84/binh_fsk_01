@@ -6,7 +6,7 @@ content = content.replaceAll(" ", "</span> <span>");
 content = `<span>${content}</span>`;
 
 console.log(content);
-document.write(content);
+// document.write(content);
 
 var index = 0;
 setInterval(function () {
@@ -16,6 +16,7 @@ setInterval(function () {
   if (char === ">" && charNext !== " ") {
     var html =
       content.slice(0, index) + ` class="highlight"` + content.slice(index);
+    // console.log(html);
     document.body.innerHTML = html;
   }
 

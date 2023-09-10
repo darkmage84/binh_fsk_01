@@ -2,143 +2,121 @@
 // Lấy kết quả giao giữa 2 mảng
 console.log("Bài 1:");
 
-function getDuplicate(arr1, arr2) {
-  var result = [];
-  for (var i in arr1) {
-    if (arr2.includes(arr1[i])) {
-      result.push(arr1[i]);
-    }
-  }
-  return result;
-}
-
 var arr1 = [1, 4, 3, 2];
 var arr2 = [5, 2, 6, 7, 1];
-console.log(`Phan tu giao giua hai mang: ${getDuplicate(arr1, arr2)}`);
-
 var result = [];
-console.log(result, result.length);
-for (var i = 0; i < arr1.length; i++) {
-  for (var j = 0; j < arr2.length; j++) {
-    if (arr1[i] === arr2[j]) {
-      result[result.length] = arr1[i];
-    }
+
+console.log(`mang arr1 = [${arr1}]`);
+console.log(`mang arr2 = [${arr2}]`);
+
+var result = arr1.reduce(function (prev, current) {
+  if (arr2.includes(current)) {
+    prev.push(current);
   }
-}
-console.log(result);
+  return prev;
+}, []);
+
+// console.log(result);
+console.log(`Giao giua 2 mang result = [${result}]`);
+
 // Bài 2:
 // Làm phẳng array sau (Chuyển về mảng 1 chiều)
 console.log("Bài 2:");
 
-function convertToSingleDimensionalArray(arr) {
-  for (var i = 0; i < arr.length; i++) {
-    while (Array.isArray(arr[i])) {
-      if (Array.isArray(arr[i])) {
-        arr.splice(i, 1, ...arr[i]);
-      }
+var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
+
+function singleArray(arr) {
+  var newArr = arr.reduce(function (prev, current) {
+    if (!Array.isArray(current)) {
+      return prev.concat(current);
     }
-  }
-
-  return arr;
+    return prev.concat(singleArray(current));
+  }, []);
+  return newArr;
 }
+console.log(`Mang sau khi lam phang: ${singleArray(arr)}`);
 
-// var arr = [0, 1, [2, 3], [4, 5, [6, 7]], [8, [9, 10, [11, 12]]]];
-// console.log(convertToSingleDimensionalArray(arr));
+/*
+phương thức flat() trong es6
+console.log(arr.flat(Infinity));
+*/
 
 // Bài 3: Tách phần tử trong mảng theo đúng kiểu dữ liệu
 
-function separateElementByDataType(arr) {
-  var dimensionalArr = convertToSingleDimensionalArray(arr),
-    arrLength = dimensionalArr.length,
-    arrResult = [],
-    numberArr = [],
-    stringArr = [],
-    booleanArr = [],
-    objectArr = [],
-    array = [],
-    functionArr = [];
-  dimensionalArr.forEach((element) => {
-    switch (typeof element) {
-      case "number":
-        numberArr.push(element);
-        break;
-      case "string":
-        stringArr.push(element);
-        break;
-      case "boolean":
-        booleanArr.push(element);
-        break;
-      case "object":
-        Array.isArray(element) ? array.push(element) : objectArr.push(element);
-        break;
-      case "function":
-        functionArr.push(element);
-        break;
-    }
-  });
-  arrResult.push(numberArr, stringArr, booleanArr, objectArr, functionArr);
-  arrResult = arrResult.filter((n) => n.length > 0);
-  return arrResult;
-}
+console.log("Bài 3:");
+
 var arr = [
   ["a", 1, true],
   ["b", 2, false],
-  [{ name: "Hiep", address: "Ha Noi" }, () => console.log("Hello")],
-  [{ name: "Duong", address: "Ha Noi" }, () => console.log("Hé lô")],
 ];
-console.log(separateElementByDataType(arr));
+
+if (Array.isArray(arr)) {
+  arr = arr.flat(Infinity);
+  var newArray = arr.reduce(function (prev, current) {
+    var type = typeof current;
+    if (!prev[type]) {
+      prev[type] = [];
+    }
+    prev[type].push(current);
+    return prev;
+  }, []);
+
+  console.log(newArray);
+}
 
 // Bài 4
 
-function renderPosts(data) {
-  for (var i in data) {
-    if (i % 2 === 0)
-      document.write(
-        `<div class="post-item">
-                    <img src="${data[i].img}" alt="img-1" class="main-img" />
-                    <div class="post-content">
-                        <h2 class="post-title">${data[i].title}</h2>
-                        <p class="post-desc">
-                        ${data[i].desc}
-                        </p>
-                    </div>
-                </div>`
-      );
-    else {
-      document.write(
-        `<div class="post-item">
-                    <div class="post-content">
-                        <h2 class="post-title">${data[i].title}</h2>
-                        <p class="post-desc">
-                        ${data[i].desc}
-                        </p>
-                    </div>
-                    <img src="${data[i].img}" alt="img-1" class="main-img" />
-                </div>`
-      );
-    }
-  }
-}
-var data = [
+var arr = [
   {
+    img: "img/11111.jpg",
     title: "Tiêu đề bài viết 1",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas error saepe aut earum quae consequatur similique consectetur hic porro. Cum quas error saepe aut earum quae consequatur similique consectetur hic porro. similique consectetur hic porro. Cum quas error saepe aut earum quae consequatur similique consectetur hic porro.",
-    img: "./img-1.jpg",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minima assumenda accusantium vero ea tempore laborum, est veritatis facere nobis!",
   },
   {
+    img: "img/11111.jpg",
     title: "Tiêu đề bài viết 2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas error saepe aut earum quae consequatur similique consectetur hic porro. Cum quas error saepe aut earum quae consequatur similique consectetur hic porro. similique consectetur hic porro. Cum quas error saepe aut earum quae consequatur similique consectetur hic porro.",
-    img: "./img-2.jpg",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minima assumenda accusantium vero ea tempore laborum, est veritatis facere nobis!",
   },
   {
+    img: "img/11111.jpg",
     title: "Tiêu đề bài viết 3",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas error saepe aut earum quae consequatur similique consectetur hic porro. Cum quas error saepe aut earum quae consequatur similique consectetur hic porro. similique consectetur hic porro. Cum quas error saepe aut earum quae consequatur similique consectetur hic porro.",
-    img: "./img-3.jpg",
-  },
-  {
-    title: "Tiêu đề bài viết 4",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas error saepe aut earum quae consequatur similique consectetur hic porro. Cum quas error saepe aut earum quae consequatur similique consectetur hic porro. similique consectetur hic porro. Cum quas error saepe aut earum quae consequatur similique consectetur hic porro.",
-    img: "./img-4.jpg",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minima assumenda accusantium vero ea tempore laborum, est veritatis facere nobis!",
   },
 ];
-renderPosts(data);
+
+for (var i in arr) {
+  var str;
+  if (i % 2 === 0) {
+    str = `
+    <div class="item">
+             <div class="img-odd">
+                 <img src="${arr[i]["img"]}" alt="">
+             </div>
+             <div class="content">
+                 <h2 class="heading-lv2">
+                     ${arr[i]["title"]}
+                 </h2>
+                 <p class="desc">${arr[i]["content"]}</p>
+             </div>
+     </div>
+    `;
+  } else {
+    str = `
+    <div class="item">
+             <div class="img-even">
+                 <img src="${arr[i]["img"]}" alt="">
+             </div>
+             <div class="content">
+                 <h2 class="heading-lv2">
+                     ${arr[i]["title"]}
+                 </h2>
+                 <p class="desc">${arr[i]["content"]}</p>
+             </div>
+     </div>
+    `;
+  }
+  document.body.insertAdjacentHTML("beforeBegin", str);
+}

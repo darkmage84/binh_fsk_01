@@ -147,7 +147,7 @@ body {
 .modal-auth .login-form .auth-social span {
   color: #1a1a1a;
   text-align: center;
-  margin-bottom: 24px;
+  margin: 14px auto;
 }
 
 .modal-auth .login-form label {

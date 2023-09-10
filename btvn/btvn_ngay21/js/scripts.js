@@ -36,11 +36,11 @@ console.log(getError("password"));
 // Bài 2:
 console.log("Bài 2:");
 
-var Customer = function (name, age, address) {
+function Customer(name, age, address) {
   this.name = name;
   this.age = age;
   this.address = address;
-};
+}
 
 const customers = [
   new Customer("Nguyễn Văn A", 11, "Ha Noi"),
@@ -73,11 +73,11 @@ console.log(result);
 // Bài 3:
 console.log("Bài 3:");
 
-var Person = function (name, email, password) {
+function Person(name, email, password) {
   this.name = name;
   this.email = email;
   this.password = password;
-};
+}
 
 var register = function (name, email, password) {
   var errors = {};
@@ -119,7 +119,7 @@ var login = function (email, password) {
 
 var data = [];
 
-var account1 = register("Nguyen Van A", "nguyenvana@tmail.com", "123456");
+var account1 = register("Nguyen Van A", "nguyenvana@email.com", "123456");
 console.log(account1);
 
 var account2 = register("Nguyen Van B", "nguyenvanb@email.com", "147369");
@@ -128,8 +128,8 @@ console.log(account2);
 var account3 = register("Nguyen Van C", "nguyenvanc@email.com", "987654");
 console.log(account3);
 
-var dataLogin = login("nguyenvana@email.com", "123456");
-console.log(dataLogin);
+var dataLogin = login("nguyenvana@email.com", "123456@");
+// console.log(dataLogin);
 
 var dataLogin = login("nguyenvanb@email.com", "147369");
 console.log(dataLogin);
