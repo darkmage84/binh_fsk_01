@@ -196,6 +196,7 @@ var lyric = `
 // // console.log(lyric);
 // lyric = JSON.parse(lyric);
 // console.log(lyric);
+var songName = "Đâu ai chung tình được mãi";
 
 var karaoke = document.querySelector(".karaoke");
 var openKaraokeBtn = document.querySelector(".open-karaoke button");
@@ -214,7 +215,7 @@ closeKaraoke.addEventListener("click", function () {
 
 var songEl = document.createElement("div");
 songEl.innerHTML = `
-<p>Đâu ai chung tình được mãi Karaoke</p>
+<p>${songName} Karaoke</p>
 `;
 
 lyric = JSON.parse(lyric.trim());
@@ -229,66 +230,5 @@ lyric.forEach(function (item) {
 // console.log(newArr[0][0]);
 // số lượng phần tử của mảng là số câu trong bài
 
-var maxPage = Math.ceil(newArr.length / 2);
-// ham getWord
-function getWord(time) {
-  var index = newArr.findIndex(function (item) {
-    if (time >= item[0].startTime && time <= item[item.length - 1].endTime) {
-      return true;
-    }
-  });
-
-  if (
-    time < newArr[0][0].startTime - 5000 ||
-    time >
-      newArr[newArr.length - 1][newArr[newArr.length - 1].length - 1].endTime +
-        5000
-  ) {
-    karaokeInner.innerText = "";
-    karaokeInner.append(songEl);
-  }
-
-  if (index !== -1) {
-    if (
-      newArr[index + 1] &&
-      newArr[index][newArr[index].length - 1].endTime -
-        newArr[index + 1][0].startTime <
-        -10000
-    ) {
-      setTimeout(function () {
-        karaokeInner.innerText = "";
-        karaokeInner.append(songEl);
-      }, 5000);
-    } else {
-      var page = Math.floor(index / 2 + 1);
-
-      var offset = (page - 1) * 2;
-      var div = document.createElement("div");
-      if (index >= offset && index < offset + 2) {
-        for (var i = offset; i < offset + 2; i++) {
-          var p = document.createElement("p");
-
-          newArr[i].forEach(function (item, _index) {
-            var spanWord = document.createElement("span");
-            spanWord.classList.add("word");
-            spanWord.dataset.index = _index;
-            spanWord.innerText = item.data;
-            var span = document.createElement("span");
-            span.innerText = item.data;
-            spanWord.append(span);
-
-            p.append(spanWord);
-          });
-
-          div.append(p);
-        }
-      }
-
-      karaokeInner.append(div);
-
-      if (div.previousElementSibling) {
-        div.previousElementSibling.remove();
-      }
-    }
-  }
-}
+// Math.ceil() làm tròn lên
+// lấy ra số trang tối đa với 2 câu 1 trangv
