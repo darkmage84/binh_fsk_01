@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Btvn Google Docs Editor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">
+        <h1>Doc Editor</h1>
+      </div>
+
+      <hr />
+
+      <div class="action">
+        <div class="download">
+          <div class="download-file-type">
+            <button class="btn btn-download">File</button>
+
+            <div class="menu-type">
+              <button class="new-btn">New</button>
+              <button class="txt-btn">Save as TXT</button>
+              <button class="pdf-btn">Save as PDF</button>
+            </div>
+          </div>
+
+          <div class="download-file-name">
+            <input type="text" class="file-name" value="untitled" />
+          </div>
+        </div>
+
+        <div class="change-word-type">
+          <button class="btn bold-btn">
+            <b>b</b>
+          </button>
+
+          <button class="btn underline-btn">
+            <u>u</u>
+          </button>
+
+          <button class="btn italic-btn">
+            <i>i</i>
+          </button>
+
+          <input type="color" class="color-input" />
+        </div>
+      </div>
+      <div class="content" contenteditable="true" spellcheck="false"></div>
+
+      <div class="count">
+        <span class="char-count">Số ký tự: 0</span>
+        <span class="word-count">Số từ:</span>
+      </div>
+    </div>
+
+    <!-- scr -->
+    <script src="script.js"></script>
+  </body>
+</html>

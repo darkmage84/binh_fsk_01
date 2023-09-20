@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.action {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.download {
+  display: flex;
+  gap: 20px;
+}
+
+.download .btn-download {
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #fff;
+  background: #0d6efd;
+  cursor: pointer;
+}
+.download .btn-download::after {
+  content: "";
+  display: inline-block;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  border-top: 0.3em solid;
+  margin-left: 4px;
+  margin-bottom: 2px;
+}
+
+.menu-type {
+  display: none;
+}
+
+.download-file-name input {
+  width: 150px;
+  height: 30px;
+  padding-left: 4px;
+  font-size: 1rem;
+}
+
+.change-word-type {
+  display: flex;
+  gap: 10px;
+}
+.change-word-type button {
+  width: 50px;
+  height: 100%;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.change-word-type button:hover {
+  background: #333333eb;
+}
+
+.content {
+  margin: 30px 0;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  min-height: 300px;
+  font-size: 1rem;
+}
