@@ -48,6 +48,26 @@ body {
 
 .menu-type {
   display: none;
+  position: absolute;
+  /* inset: 0 auto auto 0; */
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 4px;
+}
+.menu-type ul {
+  list-style: none;
+}
+.menu-type ul li {
+  margin: 16px 8px;
+}
+.menu-type button {
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+}
+.menu-type button:hover {
+  background: #ddd;
 }
 
 .download-file-name input {

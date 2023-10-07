@@ -7,6 +7,7 @@ var underlineBtn = document.querySelector(".underline-btn");
 var italicBtn = document.querySelector(".italic-btn");
 var colorInput = document.querySelector(".color-input");
 
+// change word type
 var countBold = 0;
 boldBtn.addEventListener("click", function () {
   document.execCommand("bold");
@@ -43,3 +44,8 @@ italicBtn.addEventListener("click", function () {
 colorInput.addEventListener("input", function () {
   document.execCommand("foreColor", false, colorInput.value);
 });
+// end Change word type
+
+// count word and char
+var charCount = document.querySelector(".char-count");
+var wordCount = document.querySelector(".word-count");
